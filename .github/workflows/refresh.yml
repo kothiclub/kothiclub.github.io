@@ -1,0 +1,39 @@
+name: Refresh Instagram stats
+
+on:
+  schedule:
+    - cron: "30 0 * * *"     # every day at 6:00 AM India time
+  workflow_dispatch:          # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch latest numbers
+        run: python scripts/update.py
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          YT_CHANNEL_ID: ${{ secrets.YT_CHANNEL_ID }}
+      - name: Save changes
+        run: |
+          git config user.name "kothi-club-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data media
+          git diff --cached --quiet || (git commit -m "Refresh stats $(date -u +'%Y-%m-%d %H:%M')" && git push)
