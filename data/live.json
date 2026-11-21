@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-21T01:44:23Z",
+  "generated_at": "2026-11-21T08:39:12Z",
   "profile": {
     "username": "kothiclub",
     "name": "Kothi Club",
-    "followers": 66722,
+    "followers": 66712,
     "media_count": 37
   },
   "platforms": {
-    "instagram": 66722,
+    "instagram": 66712,
     "facebook": 94865,
     "youtube": null
   },
   "last_30_days": {
-    "views": 1004657,
-    "reach": 639599,
-    "accounts_engaged": 18037,
-    "total_interactions": 21030
+    "views": 999333,
+    "reach": 638362,
+    "accounts_engaged": 17845,
+    "total_interactions": 20864
   },
   "averages": {
-    "reel_views": 170142,
-    "reel_reach": 132652,
+    "reel_views": 170158,
+    "reel_reach": 132656,
     "engagement_rate": 8.69,
     "reel_shares": 2922,
     "reels_counted": 12
@@ -31,11 +31,11 @@
       "type": "VIDEO",
       "posted": "2026-07-23T18:01:08+0000",
       "caption": "Virat Kohli built an 8-acre home with no television. On purpose.",
-      "views": 1560819,
+      "views": 1560944,
       "reach": 1223322,
-      "likes": 79014,
+      "likes": 79010,
       "comments": 250,
-      "saves": 15515,
+      "saves": 15518,
       "shares": 33487,
       "interactions": 129250,
       "thumb": "media/18157174870471807.jpg"
@@ -46,8 +46,8 @@
       "type": "VIDEO",
       "posted": "2026-07-06T15:06:25+0000",
       "caption": "This is a real middle-class Indian home watch what ₹0 of imagination can do. 🏠",
-      "views": 104356,
-      "reach": 77555,
+      "views": 104417,
+      "reach": 77601,
       "likes": 568,
       "comments": 11,
       "saves": 105,
@@ -76,8 +76,8 @@
       "type": "VIDEO",
       "posted": "2026-06-14T12:10:49+0000",
       "caption": "That’s showing in her living room used to mean your home, had arrived. The Jhula.",
-      "views": 57000,
-      "reach": 45859,
+      "views": 57005,
+      "reach": 45864,
       "likes": 1170,
       "comments": 2,
       "saves": 297,
@@ -106,7 +106,7 @@
       "type": "VIDEO",
       "posted": "2026-06-30T14:06:16+0000",
       "caption": "Why did we stop building homes like this? 🏠",
-      "views": 55077,
+      "views": 55082,
       "reach": 40006,
       "likes": 1618,
       "comments": 17,
@@ -123,13 +123,13 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-10-23T16:43:44+0000",
       "caption": "Saif Ali Khan bought back his own home. On purpose.",
-      "views": 911385,
+      "views": 911387,
       "reach": 599372,
       "likes": 10960,
       "comments": 82,
-      "saves": 2678,
+      "saves": 2677,
       "shares": 1971,
-      "interactions": 15784,
+      "interactions": 15783,
       "thumb": "media/18128958244830058.jpg"
     },
     {
@@ -198,8 +198,8 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-11-05T16:24:48+0000",
       "caption": "Heard there’s a new electric diya out this Diwali.",
-      "views": 7239,
-      "reach": 3499,
+      "views": 7241,
+      "reach": 3504,
       "likes": 124,
       "comments": 21,
       "saves": 8,
@@ -256,7 +256,7 @@
     "cities": [
       {
         "label": "Mumbai",
-        "share": 9.7
+        "share": 9.8
       },
       {
         "label": "Bengaluru",
@@ -264,11 +264,11 @@
       },
       {
         "label": "Delhi",
-        "share": 7.7
+        "share": 7.3
       },
       {
         "label": "Lahore",
-        "share": 6.5
+        "share": 7.0
       },
       {
         "label": "Karachi",
@@ -276,13 +276,13 @@
       },
       {
         "label": "Dubai",
-        "share": 5.2
+        "share": 5.1
       }
     ],
     "countries": [
       {
         "label": "India",
-        "share": 53.9
+        "share": 54.0
       },
       {
         "label": "Pakistan",
@@ -294,7 +294,7 @@
       },
       {
         "label": "Canada",
-        "share": 4.0
+        "share": 3.9
       },
       {
         "label": "United Arab Emirates",
