@@ -9,37 +9,36 @@
     "youtube": 25000
   },
   "contact": {
-    "name": "Shivam",
-    "email": "collab@kothiclub.example",
+    "email": "kothiclub@gmail.com",
     "whatsapp": "",
-    "instagram": "https://www.instagram.com/",
+    "instagram": "https://www.instagram.com/kothiclub/",
     "reply_time": "We reply to every brief within two working days."
   },
   "rates": [
     {
       "format": "Dedicated reel",
-      "includes": "A Kothi Club story built around your brand: concept, script, edit and publishing on our page.",
-      "price": 50000
+      "includes": "You share a brief or a rough draft of the script. We shape it into a Kothi Club story, edit it and publish it on our page.",
+      "price": 40000
     },
     {
       "format": "Collab reel",
-      "includes": "Co-published on your profile and ours, so the reel and its numbers count on both.",
-      "price": 60000
+      "includes": "Built from your brief or rough script, then co-published on your profile and ours, so the reel and its numbers count on both.",
+      "price": 50000
     },
     {
       "format": "Integrated feature",
-      "includes": "Your product placed inside a Kothi Club home story, with a clear spoken or on-screen mention.",
-      "price": 30000
+      "includes": "Your product appears inside one of our regular home stories, with a clear on-screen or spoken mention. The story isn’t about your brand, it features it.",
+      "price": 20000
     },
     {
       "format": "Story, single frame",
       "includes": "One frame with a link sticker and brand tag, live for 24 hours.",
-      "price": 8000
+      "price": 3000
     },
     {
       "format": "Story set, three frames",
       "includes": "A short sequence with a link sticker on the last frame.",
-      "price": 20000
+      "price": 8000
     },
     {
       "format": "Feed post or carousel",
@@ -60,41 +59,42 @@
   "packages": [
     {
       "name": "The Editorial Story",
-      "what": "One storytelling reel",
+      "what": "One reel and a story set",
       "items": [
-        "One bespoke concept",
-        "Full creative direction",
-        "Edit, motion and pacing",
-        "Publishing and caption",
+        "One dedicated reel",
+        "Three-frame story set with link",
+        "Built from your brief or rough script",
         "Performance report"
       ],
-      "price": 50000,
+      "price": 45000,
+      "worth": 48000,
       "featured": false
     },
     {
       "name": "The Design Story Series",
       "what": "Two connected reels",
       "items": [
-        "Two linked concepts",
-        "One narrative across both",
-        "Supporting stories",
-        "Full direction and edit",
+        "Two dedicated reels, one narrative",
+        "Two story sets with links",
+        "Built from your brief or rough script",
         "Performance report"
       ],
-      "price": 90000,
+      "price": 85000,
+      "worth": 96000,
       "featured": true
     },
     {
       "name": "The Campaign Partnership",
-      "what": "Four reels and stories",
+      "what": "A month-long campaign",
       "items": [
-        "Campaign planning",
-        "A cohesive brand arc",
-        "Four reels plus stories",
-        "Priority scheduling",
+        "Four dedicated reels",
+        "Four story sets with links",
+        "One carousel post",
+        "Campaign planning and priority dates",
         "Full reporting"
       ],
-      "price": 170000,
+      "price": 190000,
+      "worth": 217000,
       "featured": false
     }
   ],
