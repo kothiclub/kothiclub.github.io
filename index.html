@@ -2,310 +2,375 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kothi Club media kit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
+<title>Kothi Club media kit</title>
 <meta name="description" content="Live audience, reach and rates for brand collaborations with Kothi Club.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#000; --paper:#fff; --mute:#5c5c5c; --line:#d4d4d4; --wash:#ededed;
-  --display:"Bodoni Moda","Bodoni 72","Didot",Georgia,serif;
-  --text:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  --text:#1d1d1f; --text-2:#6e6e73; --text-3:#86868b;
+  --bg:#fff; --bg-2:#f5f5f7; --line:#d2d2d7; --line-soft:#e8e8ed;
+  --glass:rgba(255,255,255,.62); --glass-line:rgba(255,255,255,.7);
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Inter","Helvetica Neue",Arial,sans-serif;
+  --r-lg:28px; --r-md:20px; --r-sm:14px;
   color-scheme:light;
-  box-sizing:border-box;
-  padding-top:env(safe-area-inset-top,0px);
-  padding-bottom:env(safe-area-inset-bottom,0px);
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){ --ink:#fff; --paper:#000; --mute:#a8a8a8; --line:#333; --wash:#161616; color-scheme:dark; }
-}
-:root[data-theme="dark"]{ --ink:#fff; --paper:#000; --mute:#a8a8a8; --line:#333; --wash:#161616; color-scheme:dark; }
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--text);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-img{max-width:100%;display:block}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;overflow-x:clip;background:var(--bg);color:var(--text);font:400 17px/1.47 var(--font);letter-spacing:-.022em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+img{display:block;max-width:100%}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
-.serif{font-family:var(--display);font-weight:400}
-
-/* notice + bar */
-.notice{display:none;background:var(--ink);color:var(--paper);font-size:14px;text-align:center;padding:10px 20px}
-.notice.on{display:block}
-.bar{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;border-bottom:1px solid var(--ink)}
-.mark{font-family:var(--display);font-size:22px;text-decoration:none}
-.bar nav{display:flex;gap:28px;font-size:15px}
-.bar nav a{text-decoration:none}
-.bar nav a:hover{text-decoration:underline;text-underline-offset:5px}
-@media (max-width:700px){.bar nav a:not(.cta){display:none}}
-
-/* hero */
-.hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(36px,6vw,96px);align-items:end;padding:clamp(48px,8vw,104px) 0 clamp(56px,7vw,96px)}
-.hero h1{font-family:var(--display);font-weight:400;font-size:clamp(78px,13.5vw,188px);line-height:.84;letter-spacing:-.03em;margin:0 0 36px}
-.lede{font-size:clamp(19px,1.8vw,22px);line-height:1.45;max-width:30ch;margin:0 0 44px}
-.platforms{display:flex;flex-wrap:wrap;gap:16px 48px;margin:0;padding:0;list-style:none}
-.platforms li{display:flex;flex-direction:column}
-.platforms .n{font-family:var(--display);font-size:clamp(36px,3.6vw,48px);line-height:1}
-.platforms .l{font-size:14px;color:var(--mute);margin-top:8px}
-.status{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--mute);margin:40px 0 0}
-.status::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--ink)}
-.status.sample::before{background:transparent;border:1px solid var(--ink)}
-
-.arch{margin:0;max-width:420px;justify-self:end;width:100%}
-.arch a,.arch .frame-wrap{display:block;text-decoration:none}
-.frame{border:1px solid var(--ink);border-radius:999px 999px 0 0;padding:12px 12px 0}
-.pane{border-radius:999px 999px 0 0;overflow:hidden;background:var(--wash);aspect-ratio:3/4;position:relative}
-.pane img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:filter .5s ease}
-a:hover .pane img,a:focus-visible .pane img{filter:none}
-.pane .empty{position:absolute;inset:0;display:grid;place-items:center;color:var(--mute);font-family:var(--display);font-size:clamp(20px,2vw,26px);text-align:center;padding:24px}
-.sill{border:1px solid var(--ink);border-top:0;height:14px}
-.arch figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-top:16px}
-.arch figcaption span{font-size:14px;color:var(--mute)}
-.arch figcaption strong{font-family:var(--display);font-weight:400;font-size:clamp(28px,2.8vw,38px)}
-@media (max-width:860px){
-  .hero{grid-template-columns:1fr}
-  .arch{justify-self:start;max-width:340px}
-}
-
-/* sections */
-section{padding:clamp(64px,9vw,120px) 0;border-top:1px solid var(--ink)}
-.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 64px;align-items:end;margin-bottom:clamp(40px,5vw,64px)}
-.head h2{font-family:var(--display);font-weight:400;font-size:clamp(42px,5.6vw,76px);line-height:.96;letter-spacing:-.02em;margin:0}
-.head p{margin:0;color:var(--mute);max-width:46ch}
-@media (max-width:760px){.head{grid-template-columns:1fr}}
-h3.sub{font-family:var(--display);font-weight:400;font-size:clamp(28px,3vw,38px);margin:clamp(64px,8vw,96px) 0 28px}
-
-/* stats */
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0}
-.stats div{display:flex;flex-direction:column-reverse;justify-content:flex-end;padding:22px 24px 26px 0;border-top:1px solid var(--line)}
-.stats dt{font-size:14px;color:var(--mute);max-width:20ch}
-.stats dd{margin:0 0 8px;font-family:var(--display);font-size:clamp(36px,4.2vw,58px);line-height:1;font-variant-numeric:lining-nums}
-@media (max-width:860px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
-
-/* tiles */
-.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px clamp(20px,3vw,40px)}
-@media (max-width:860px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.tile{display:block;text-decoration:none;break-inside:avoid}
-.tile .pane{aspect-ratio:4/5}
-.tile.post .pane{border-radius:0;aspect-ratio:1/1}
-.tile .big{font-family:var(--display);font-size:clamp(26px,2.6vw,34px);line-height:1.1;margin:18px 0 6px}
-.tile .cap{font-size:15px;line-height:1.4;margin:0 0 14px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.8em}
-.tile dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 18px;margin:0;padding-top:12px;border-top:1px solid var(--line);font-size:14px}
-.tile dl div{display:flex;justify-content:space-between;gap:8px}
-.tile dt{color:var(--mute)}
-.tile dd{margin:0;font-variant-numeric:tabular-nums}
-@media (max-width:480px){.tile dl{grid-template-columns:1fr}}
-
-/* audience */
-.aud{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px clamp(32px,6vw,96px)}
-@media (max-width:760px){.aud{grid-template-columns:1fr}}
-.aud h3{font-family:var(--display);font-weight:400;font-size:30px;margin:0 0 20px}
-.split{display:flex;height:64px;border:1px solid var(--ink)}
-.split span{height:100%}
-.split span:nth-child(1){background:var(--ink)}
-.split span:nth-child(2){background:var(--wash)}
-.split span:nth-child(3){background:repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 4px)}
-.legend{display:flex;flex-wrap:wrap;gap:6px 28px;margin:14px 0 0;padding:0;list-style:none;font-size:15px}
-.legend b{font-weight:600;font-variant-numeric:tabular-nums}
-.rows{list-style:none;margin:0;padding:0}
-.rows li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 16px;padding:12px 0 6px;font-size:15px}
-.rows li span:last-of-type{font-variant-numeric:tabular-nums}
-.track{grid-column:1/-1;height:3px;background:var(--wash)}
-.fill{height:100%;background:var(--ink)}
-.aud .gap{margin-top:48px}
-
-/* rates */
-.rates{width:100%;border-collapse:collapse}
-.rates th{text-align:left;font-weight:500;font-size:14px;color:var(--mute);padding:0 0 12px;border-bottom:1px solid var(--ink)}
-.rates th:last-child{text-align:right}
-.rates td{padding:24px 0;border-bottom:1px solid var(--line);vertical-align:top}
-.rates td:nth-child(1){font-family:var(--display);font-size:clamp(22px,2.2vw,27px);line-height:1.15;width:30%;padding-right:28px}
-.rates td:nth-child(2){color:var(--mute);padding-right:28px;max-width:52ch}
-.rates td:nth-child(3){text-align:right;white-space:nowrap;font-size:20px;font-variant-numeric:tabular-nums}
-@media (max-width:700px){
-  .rates thead{display:none}
-  .rates tr{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;padding:20px 0;border-bottom:1px solid var(--line)}
-  .rates td{padding:0;border:0;width:auto!important}
-  .rates td:nth-child(2){grid-column:1/-1;grid-row:2}
-  .rates td:nth-child(3){white-space:normal}
-}
-.packs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--ink)}
-.pack{display:flex;flex-direction:column;padding:clamp(24px,3vw,36px);border-left:1px solid var(--ink);break-inside:avoid}
-.pack:first-child{border-left:0}
-.pack.feat{background:var(--ink);color:var(--paper)}
-.pack .tag{font-size:14px;min-height:1.5em;margin-bottom:20px}
-.pack h4{font-family:var(--display);font-weight:400;font-size:clamp(26px,2.6vw,32px);line-height:1.1;margin:0 0 6px}
-.pack .what{font-size:15px;opacity:.72;margin:0 0 22px}
-.pack ul{margin:0 0 32px;padding-left:18px;font-size:15px;line-height:1.7}
-.pack .price{margin-top:auto;font-family:var(--display);font-size:clamp(36px,3.6vw,46px);line-height:1}
-@media (max-width:860px){
-  .packs{grid-template-columns:1fr}
-  .pack{border-left:0;border-top:1px solid var(--ink)}
-  .pack:first-child{border-top:0}
-}
-.terms{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 48px;font-size:14px;color:var(--mute)}
-@media (max-width:700px){.terms{grid-template-columns:1fr}}
-
-/* contact */
-.contact h2{font-family:var(--display);font-weight:400;font-size:clamp(46px,7.4vw,108px);line-height:.94;letter-spacing:-.025em;margin:0 0 28px;max-width:13ch}
-.contact p{max-width:46ch;margin:0 0 40px;color:var(--mute)}
-.actions{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:500 16px var(--text);text-decoration:none;cursor:pointer}
-.btn:hover{background:var(--ink);color:var(--paper)}
-.btn.solid{background:var(--ink);color:var(--paper)}
-.btn.solid:hover{background:var(--paper);color:var(--ink)}
-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 24px;border-top:1px solid var(--ink);padding:24px 0 40px;font-size:14px;color:var(--mute)}
-
+:focus-visible{outline:3px solid rgba(0,113,227,.6);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
 [hidden]{display:none!important}
 
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:52px;gap:20px}
+.brand{font-weight:600;font-size:18px;letter-spacing:-.02em;text-decoration:none}
+.links{display:flex;align-items:center;gap:26px;font-size:14px;letter-spacing:-.01em}
+.links a{text-decoration:none;color:var(--text-2);transition:color .2s}
+.links a:hover{color:var(--text)}
+.links a.pill{color:#fff}
+@media (max-width:720px){.links a:not(.pill){display:none}}
+
+.notice{background:var(--bg-2);color:var(--text-2);font-size:13px;text-align:center;padding:9px 20px;letter-spacing:-.01em}
+
+/* buttons */
+.pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 22px;border-radius:980px;background:var(--text);color:#fff;font:500 16px/1 var(--font);letter-spacing:-.01em;text-decoration:none;border:1px solid var(--text);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.pill:hover{background:#000}
+.pill.ghost{background:transparent;color:var(--text);border-color:var(--line)}
+.pill.ghost:hover{border-color:var(--text);background:transparent}
+.nav .pill{min-height:32px;padding:0 14px;font-size:14px}
+
+/* hero */
+.hero{padding:clamp(56px,9vw,104px) 0 clamp(40px,6vw,72px);text-align:center}
+.hero h1{font-size:clamp(56px,10vw,104px);font-weight:700;letter-spacing:-.04em;line-height:1.02;margin:0}
+.hero .sub{font-size:clamp(20px,2.4vw,28px);font-weight:500;letter-spacing:-.02em;line-height:1.3;color:var(--text);max-width:30ch;margin:18px auto 0}
+.ctas{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:32px}
+.platforms{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 56px;margin:52px 0 0;padding:0;list-style:none}
+.platforms li{display:flex;flex-direction:column;align-items:center}
+.platforms .n{font-size:clamp(32px,3.6vw,44px);font-weight:600;letter-spacing:-.03em;line-height:1.1}
+.platforms .l{font-size:14px;color:var(--text-2);margin-top:4px}
+@media (max-width:480px){.platforms{gap:10px 26px}.platforms .n{font-size:28px}.platforms .l{font-size:12px}}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--text-2);margin-top:28px}
+.status::before{content:"";width:7px;height:7px;border-radius:50%;background:#30d158;box-shadow:0 0 0 3px rgba(48,209,88,.18)}
+.status.sample::before{background:var(--text-3);box-shadow:none}
+
+/* stage: blurred backdrop + glass panel */
+.stage{position:relative;overflow:hidden;border-radius:var(--r-lg);background:var(--bg-2);margin-top:clamp(40px,6vw,64px);isolation:isolate}
+.stage-bg{position:absolute;inset:-60px;background-size:cover;background-position:center;filter:blur(60px) saturate(1.5);opacity:.85;z-index:-1;transform:scale(1.1)}
+.stage-in{display:grid;grid-template-columns:auto minmax(0,420px);justify-content:center;align-items:center;gap:clamp(28px,5vw,64px);padding:clamp(28px,5vw,64px)}
+.phone{width:clamp(200px,24vw,270px);aspect-ratio:9/16;border-radius:26px;overflow:hidden;background:#ddd;box-shadow:0 30px 60px -20px rgba(0,0,0,.35),0 0 0 1px rgba(0,0,0,.04);display:block}
+.phone img{width:100%;height:100%;object-fit:cover}
+.glass{background:var(--glass);-webkit-backdrop-filter:saturate(180%) blur(28px);backdrop-filter:saturate(180%) blur(28px);border:1px solid var(--glass-line);border-radius:24px;padding:clamp(24px,3vw,34px);text-align:left;box-shadow:0 10px 40px -12px rgba(0,0,0,.12)}
+.glass .k{font-size:14px;color:var(--text-2);font-weight:500;margin:0}
+.glass .big{font-size:clamp(44px,5vw,60px);font-weight:700;letter-spacing:-.04em;line-height:1.05;margin:6px 0 10px}
+.glass .cap{margin:0 0 22px;font-size:17px;line-height:1.4}
+.glass dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 24px;margin:0 0 24px;padding-top:18px;border-top:1px solid rgba(0,0,0,.08)}
+.glass dt{font-size:13px;color:var(--text-2)}
+.glass dd{margin:2px 0 0;font-size:22px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.textlink{color:#0066cc;text-decoration:none;font-size:17px}
+.textlink:hover{text-decoration:underline}
+@media (max-width:760px){.stage-in{grid-template-columns:1fr;justify-items:center}.glass{width:100%}}
+
+/* sections */
+.sec{padding:clamp(72px,10vw,120px) 0}
+.sec.grey{background:var(--bg-2)}
+.sec-head{text-align:center;max-width:720px;margin:0 auto clamp(40px,5vw,60px)}
+.sec-head h2{font-size:clamp(38px,5.6vw,60px);font-weight:700;letter-spacing:-.035em;line-height:1.07;margin:0}
+.sec-head p{font-size:clamp(17px,1.8vw,21px);color:var(--text-2);line-height:1.4;margin:14px 0 0}
+
+/* bento stats */
+.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.tile{background:var(--bg);border-radius:var(--r-md);padding:26px 24px 24px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between}
+.sec:not(.grey) .tile{background:var(--bg-2)}
+.tile .v{font-size:clamp(34px,3.8vw,46px);font-weight:700;letter-spacing:-.04em;line-height:1.05}
+.tile .l{font-size:15px;color:var(--text-2);line-height:1.35;margin-top:14px}
+.tile.wide{grid-column:span 2}
+@media (max-width:860px){.bento{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* carousels */
+.row-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:0 0 20px}
+.row-head h3{font-size:clamp(24px,2.6vw,32px);font-weight:700;letter-spacing:-.03em;margin:0}
+.arrows{display:flex;gap:10px}
+.arrow{width:40px;height:40px;border-radius:50%;border:0;background:rgba(0,0,0,.06);color:var(--text);display:grid;place-items:center;cursor:pointer;transition:background .2s}
+.arrow:hover{background:rgba(0,0,0,.12)}
+.arrow svg{width:16px;height:16px}
+.track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;--edge:max(22px,calc((100vw - 1036px) / 2));scroll-padding:0 var(--edge);padding:4px var(--edge) 28px;margin:0 calc(50% - 50vw);width:100vw;scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.card{flex:0 0 clamp(250px,28vw,300px);scroll-snap-align:start;background:var(--bg);border-radius:var(--r-md);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(0,0,0,.04);transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+a.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -16px rgba(0,0,0,.22)}
+.sec:not(.grey) .card{background:var(--bg-2)}
+.media{aspect-ratio:3/4;background:var(--line-soft);overflow:hidden}
+.card.post .media{aspect-ratio:4/5}
+.media img{width:100%;height:100%;object-fit:cover}
+.meta{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.meta .views{font-size:28px;font-weight:700;letter-spacing:-.035em;line-height:1.1;margin:0}
+.meta .views span{font-size:17px;font-weight:500;color:var(--text-2);letter-spacing:-.02em}
+.meta .cap{font-size:15px;line-height:1.4;color:var(--text);margin:8px 0 16px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.8em}
+.meta dl{margin:auto 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding-top:14px;border-top:1px solid var(--line-soft)}
+.meta dt{font-size:12px;color:var(--text-2);letter-spacing:-.005em}
+.meta dd{margin:2px 0 0;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums}
+.posts-wrap{margin-top:64px}
+
+/* audience */
+.aud{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.panel{background:var(--bg-2);border-radius:var(--r-lg);padding:clamp(24px,3vw,36px)}
+.panel h3{font-size:22px;font-weight:600;letter-spacing:-.025em;margin:0 0 22px}
+.panel h3 + .sp{margin-top:0}
+.split{display:flex;height:14px;border-radius:99px;overflow:hidden;background:var(--line-soft);gap:3px}
+.split span:nth-child(1){background:var(--text)}
+.split span:nth-child(2){background:#86868b}
+.split span:nth-child(3){background:#d2d2d7}
+.legend{display:flex;flex-wrap:wrap;gap:8px 22px;list-style:none;margin:16px 0 0;padding:0;font-size:15px;color:var(--text-2)}
+.legend li{display:flex;align-items:center;gap:8px}
+.legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.legend b{color:var(--text);font-weight:600}
+.bars{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.bars li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 12px;font-size:15px}
+.bars b{font-weight:600;font-variant-numeric:tabular-nums}
+.bar{grid-column:1/-1;height:8px;border-radius:99px;background:var(--line-soft);overflow:hidden}
+.bar span{display:block;height:100%;border-radius:99px;background:var(--text)}
+.gap{margin-top:40px!important}
+@media (max-width:760px){.aud{grid-template-columns:1fr}}
+
+/* rates */
+.ratecard{background:var(--bg);border-radius:var(--r-lg);padding:8px clamp(20px,3vw,36px)}
+.rate{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 24px;padding:22px 0;border-bottom:1px solid var(--line-soft)}
+.rate:last-child{border-bottom:0}
+.rate h4{font-size:19px;font-weight:600;letter-spacing:-.02em;margin:0}
+.rate p{grid-column:1;font-size:15px;color:var(--text-2);margin:0;line-height:1.4;max-width:56ch}
+.rate .price{grid-column:2;grid-row:1/span 2;align-self:center;font-size:21px;font-weight:600;letter-spacing:-.02em;white-space:nowrap;font-variant-numeric:tabular-nums}
+@media (max-width:600px){.rate .price{grid-row:auto;grid-column:1;font-size:18px;margin-top:6px}}
+.packs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:16px}
+.pack{background:var(--bg);border-radius:var(--r-lg);padding:clamp(26px,3vw,36px);display:flex;flex-direction:column}
+.pack.feat{background:var(--text);color:#f5f5f7}
+.pack .tag{font-size:13px;font-weight:600;color:#bf4800;min-height:18px;margin-bottom:12px}
+.pack.feat .tag{color:#ffb35c}
+.pack h4{font-size:24px;font-weight:700;letter-spacing:-.03em;line-height:1.15;margin:0}
+.pack .what{font-size:15px;color:var(--text-2);margin:6px 0 22px}
+.pack.feat .what{color:#a1a1a6}
+.pack ul{list-style:none;margin:0 0 28px;padding:0;display:grid;gap:10px;font-size:15px}
+.pack li{display:flex;gap:10px;align-items:flex-start}
+.pack li::before{content:"";flex:none;width:16px;height:16px;margin-top:2px;border-radius:50%;background:var(--bg-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.2l2.2 2.2 4.8-4.8' fill='none' stroke='%231d1d1f' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.pack.feat li::before{background-color:#3a3a3c;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.2l2.2 2.2 4.8-4.8' fill='none' stroke='%23f5f5f7' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.pack .price{margin-top:auto;font-size:clamp(32px,3.4vw,40px);font-weight:700;letter-spacing:-.04em}
+@media (max-width:860px){.packs{grid-template-columns:1fr}}
+.terms{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 40px;font-size:13px;color:var(--text-2);line-height:1.5}
+@media (max-width:700px){.terms{grid-template-columns:1fr}}
+
+/* motion */
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i,0) * 80ms)}
+.js .reveal.in{opacity:1;transform:none}
+.tile,.pack,.panel{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s,opacity .9s cubic-bezier(.2,.7,.2,1)}
+.tile:hover,.panel:hover{transform:translateY(-3px);box-shadow:0 16px 36px -18px rgba(0,0,0,.18)}
+.pack:hover{transform:translateY(-5px);box-shadow:0 22px 44px -20px rgba(0,0,0,.25)}
+.stage-bg{animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1.1) translate(0,0)}to{transform:scale(1.25) translate(-3%,2%)}}
+.arrow{-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none}.stage-bg{animation:none}.tile:hover,.pack:hover,.panel:hover{transform:none}}
+
+/* contact */
+.contact{text-align:center}
+.cta-stage{position:relative;overflow:hidden;isolation:isolate;border-radius:32px;background:var(--bg-2);padding:clamp(48px,8vw,104px) clamp(18px,5vw,64px)}
+.cta-stage .stage-bg{opacity:.9;filter:blur(60px) saturate(1.7) brightness(1.15)}
+.cta-glass{max-width:780px;margin:0 auto;background:rgba(255,255,255,.58);-webkit-backdrop-filter:saturate(180%) blur(30px);backdrop-filter:saturate(180%) blur(30px);border:1px solid rgba(255,255,255,.75);border-radius:28px;padding:clamp(36px,5vw,64px) clamp(22px,4vw,56px);box-shadow:0 20px 60px -24px rgba(0,0,0,.18)}
+.cta-glass .reply{color:var(--text-2);font-size:clamp(17px,1.8vw,20px);margin:16px 0 0}
+.pill.big{min-height:58px;padding:0 30px;font-size:18px;margin-top:32px;gap:12px;box-shadow:0 10px 24px -12px rgba(0,0,0,.45)}
+.pill.big svg{width:20px;height:20px}
+.pill.big:hover{transform:translateY(-2px)}
+.minor{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 28px;margin-top:22px}
+.minor a,.minor button{background:none;border:0;padding:0;font:400 16px var(--font);letter-spacing:-.01em;color:#0066cc;cursor:pointer;text-decoration:none}
+.minor a:hover,.minor button:hover{text-decoration:underline}
+.pack .was{font-size:14px;color:var(--text-2);margin:6px 0 0}
+.pack.feat .was{color:#a1a1a6}
+.pack .was s{text-decoration-thickness:1px}
+.contact h2{font-size:clamp(34px,5.2vw,58px);font-weight:700;letter-spacing:-.04em;line-height:1.07;margin:0 auto;max-width:16ch}
+footer{border-top:1px solid var(--line-soft);padding:22px 0 36px;font-size:12px;color:var(--text-3)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 20px}
+
 @media print{
-  :root,:root:not([data-theme="light"]){--ink:#000;--paper:#fff;--mute:#555;--line:#ccc;--wash:#eee;color-scheme:light}
-  body{font-size:11pt}
-  .bar nav,.actions,.notice{display:none!important}
-  section{padding:36px 0}
-  .tile,.pack,.rates tr,.aud > div{break-inside:avoid}
-  .hero{padding:32px 0}
-  a{text-decoration:none}
+  .nav,.notice,.ctas,.arrows,.minor{display:none!important}
+  .js .reveal{opacity:1!important;transform:none!important}
+  .stage-bg{animation:none}
+  .cta-glass{background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none}
+  .track{flex-wrap:wrap;overflow:visible;margin:0;padding:0;width:auto}
+  .card{flex:0 0 31%;break-inside:avoid;box-shadow:none;border:1px solid var(--line-soft)}
+  .glass{background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none;border:1px solid var(--line-soft)}
+  .tile,.pack,.rate,.panel{break-inside:avoid}
+  .sec{padding:40px 0}
+  .hero{padding:24px 0}
 }
 </style>
 </head>
 <body>
-<div class="notice" id="notice">Showing sample numbers. Connect Instagram (see README) and this page fills itself with your live data.</div>
-
-<div class="wrap">
-  <header class="bar">
-    <a class="mark" href="#top" id="mark">Kothi Club</a>
-    <nav aria-label="Sections">
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top" id="brand-nav">Kothi Club</a>
+    <div class="links">
       <a href="#numbers">Numbers</a>
-      <a href="#work">Top reels</a>
+      <a href="#work">Top content</a>
       <a href="#audience">Audience</a>
       <a href="#rates">Rates</a>
-      <a href="#contact" class="cta">Get in touch</a>
-    </nav>
+      <a href="#contact" class="pill">Work with us</a>
+    </div>
+  </div>
+</nav>
+<div class="notice" id="notice" hidden>Showing sample numbers. Connect Instagram to show live data.</div>
+
+<main id="top">
+  <header class="hero">
+    <div class="wrap">
+      <h1 id="brand">Kothi Club</h1>
+      <p class="sub" id="tagline"></p>
+      <div class="ctas">
+        <a class="pill" href="#contact">Work with us</a>
+        <a class="pill ghost" href="#rates">See rate card</a>
+      </div>
+      <ul class="platforms" id="platforms"></ul>
+      <p class="status" id="status">Loading the latest numbers</p>
+
+      <div class="stage" id="stage">
+        <div class="stage-bg" id="stage-bg"></div>
+        <div class="stage-in">
+          <a class="phone" id="phone" target="_blank" rel="noopener"></a>
+          <div class="glass" id="glass"></div>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <main id="top">
-    <div class="hero">
-      <div>
-        <h1 id="brand">Kothi<br>Club</h1>
-        <p class="lede" id="tagline"></p>
-        <ul class="platforms" id="platforms"></ul>
-        <p class="status" id="status">Loading the latest numbers</p>
-      </div>
-      <figure class="arch" id="arch"></figure>
-    </div>
-
-    <section id="numbers" aria-labelledby="numbers-h">
-      <div class="head">
-        <h2 id="numbers-h">Reach and engagement</h2>
+  <section class="sec grey" id="numbers" aria-labelledby="numbers-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="numbers-h">Reach and engagement.</h2>
         <p id="numbers-note"></p>
       </div>
-      <dl class="stats" id="stats"></dl>
-    </section>
+      <div class="bento" id="stats"></div>
+    </div>
+  </section>
 
-    <section id="work" aria-labelledby="work-h">
-      <div class="head">
-        <h2 id="work-h">Our most watched reels</h2>
+  <section class="sec" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="work-h">What people watch.</h2>
         <p id="about"></p>
       </div>
-      <div class="tiles" id="reels"></div>
-      <div id="posts-block">
-        <h3 class="sub">Most reached posts</h3>
-        <div class="tiles" id="posts"></div>
+      <div id="reels-wrap">
+        <div class="row-head">
+          <h3>Top reels</h3>
+          <div class="arrows" data-for="reels"></div>
+        </div>
+        <div class="track" id="reels"></div>
       </div>
-    </section>
+      <div class="posts-wrap" id="posts-wrap">
+        <div class="row-head">
+          <h3>Top posts</h3>
+          <div class="arrows" data-for="posts"></div>
+        </div>
+        <div class="track" id="posts"></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="audience" aria-labelledby="audience-h">
-      <div class="head">
-        <h2 id="audience-h">Who follows Kothi Club</h2>
-        <p>Instagram follower demographics, pulled straight from account insights.</p>
+  <section class="sec grey" id="audience" aria-labelledby="audience-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="audience-h">Who follows Kothi Club.</h2>
+        <p>Instagram follower demographics, straight from account insights.</p>
       </div>
       <div class="aud">
-        <div>
+        <div class="panel" style="background:#fff">
           <h3>Gender</h3>
           <div class="split" id="gender-bar" role="img"></div>
           <ul class="legend" id="gender-legend"></ul>
           <h3 class="gap">Age</h3>
-          <ul class="rows" id="age"></ul>
+          <ul class="bars" id="age"></ul>
         </div>
-        <div>
+        <div class="panel" style="background:#fff">
           <h3>Top cities</h3>
-          <ul class="rows" id="cities"></ul>
+          <ul class="bars" id="cities"></ul>
           <h3 class="gap">Top countries</h3>
-          <ul class="rows" id="countries"></ul>
+          <ul class="bars" id="countries"></ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="rates" aria-labelledby="rates-h">
-      <div class="head">
-        <h2 id="rates-h">Rate card</h2>
-        <p>Single formats for a quick brief, or a package when you want a story told over several weeks.</p>
+  <section class="sec" id="rates" aria-labelledby="rates-h" style="background:var(--bg-2);padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="rates-h">Rate card.</h2>
+        <p>Single formats for a quick brief, or a package when your story needs a few weeks.</p>
       </div>
-      <table class="rates">
-        <thead><tr><th scope="col">Format</th><th scope="col">What you get</th><th scope="col">Price</th></tr></thead>
-        <tbody id="rate-rows"></tbody>
-      </table>
-      <div id="packs-block">
-        <h3 class="sub">Packages</h3>
-        <div class="packs" id="packs"></div>
-      </div>
+      <div class="ratecard" id="rate-rows"></div>
+      <div class="packs" id="packs"></div>
       <ul class="terms" id="terms"></ul>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="contact" aria-labelledby="contact-h">
-      <h2 id="contact-h">Have a home, a material or a brand worth a story?</h2>
-      <p id="reply"></p>
-      <div class="actions" id="actions"></div>
-    </section>
-  </main>
+  <section class="sec contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="cta-stage reveal">
+        <div class="stage-bg" id="cta-bg"></div>
+        <div class="cta-glass">
+          <h2 id="contact-h">Have a home, a material or a brand worth a story?</h2>
+          <p class="reply" id="reply"></p>
+          <a class="pill big" id="mail"></a>
+          <div class="minor" id="minor"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
-  <footer>
+<footer>
+  <div class="wrap">
     <span id="copy"></span>
-    <span>Numbers refresh from Instagram every morning.</span>
-  </footer>
-</div>
+    <span>Numbers refresh from Instagram every six hours.</span>
+  </div>
+</footer>
 
 <script type="application/json" id="sample-live">{"generated_at": "2026-11-20T06:15:00Z", "profile": {"username": "kothiclub", "name": "Kothi Club", "followers": 67000, "media_count": 142}, "platforms": {"instagram": 67000, "facebook": 95000, "youtube": 25000}, "last_30_days": {"views": 13800000, "reach": 4200000, "accounts_engaged": 186000, "total_interactions": 412000}, "averages": {"reel_views": 1240000, "reel_reach": 610000, "engagement_rate": 6.8, "reels_counted": 12, "reel_shares": 38000}, "top_reels": [{"id": "r1", "permalink": null, "caption": "The 120-year-old haveli that stays cool without a single AC", "views": 17900000, "reach": 8400000, "likes": 712000, "comments": 9400, "saves": 268000, "shares": 431000, "thumb": null}, {"id": "r2", "permalink": null, "caption": "Why old Chettinad homes put the courtyard at the centre", "views": 6500000, "reach": 3100000, "likes": 254000, "comments": 3100, "saves": 98000, "shares": 142000, "thumb": null}, {"id": "r3", "permalink": null, "caption": "A Goan villa built around one mango tree", "views": 3000000, "reach": 1500000, "likes": 118000, "comments": 1600, "saves": 51000, "shares": 64000, "thumb": null}, {"id": "r4", "permalink": null, "caption": "Red oxide floors are coming back. Here is why", "views": 2400000, "reach": 1180000, "likes": 96000, "comments": 2200, "saves": 47000, "shares": 38000, "thumb": null}, {"id": "r5", "permalink": null, "caption": "Inside a Jodhpur kothi restored by three generations", "views": 1000000, "reach": 520000, "likes": 41000, "comments": 640, "saves": 17000, "shares": 15000, "thumb": null}, {"id": "r6", "permalink": null, "caption": "The jaali wall that cools a whole Ahmedabad home", "views": 860000, "reach": 455000, "likes": 36000, "comments": 510, "saves": 21000, "shares": 12000, "thumb": null}], "top_posts": [{"id": "p1", "permalink": null, "caption": "Ten Indian homes that use light like a material", "views": 690000, "reach": 420000, "likes": 31000, "comments": 380, "saves": 24000, "shares": 9100, "thumb": null}, {"id": "p2", "permalink": null, "caption": "Kothi Club House of the Week: a Pune bungalow", "views": 510000, "reach": 310000, "likes": 22000, "comments": 940, "saves": 11000, "shares": 5200, "thumb": null}, {"id": "p3", "permalink": null, "caption": "A field guide to Indian doorways", "views": 400000, "reach": 260000, "likes": 18000, "comments": 220, "saves": 16000, "shares": 4400, "thumb": null}], "audience": {"gender": [{"label": "Women", "share": 54.2}, {"label": "Men", "share": 44.6}, {"label": "Not specified", "share": 1.2}], "age": [{"label": "18-24", "share": 17.5}, {"label": "25-34", "share": 41.2}, {"label": "35-44", "share": 24.1}, {"label": "45-54", "share": 10.3}, {"label": "55-64", "share": 3.6}, {"label": "65+", "share": 1.5}], "cities": [{"label": "Mumbai", "share": 9.8}, {"label": "Delhi", "share": 8.6}, {"label": "Bengaluru", "share": 7.9}, {"label": "Hyderabad", "share": 5.1}, {"label": "Pune", "share": 4.4}, {"label": "Ahmedabad", "share": 3.2}], "countries": [{"label": "India", "share": 91.4}, {"label": "United Arab Emirates", "share": 2.1}, {"label": "United States", "share": 1.6}, {"label": "United Kingdom", "share": 0.9}, {"label": "Canada", "share": 0.7}, {"label": "Nepal", "share": 0.5}]}}</script>
-<script type="application/json" id="sample-site">{"brand": "Kothi Club", "show_prices": true, "tagline": "Stories of the homes India lives in, told with the care of a design magazine.", "about": "Our audience is homeowners, architects and interior designers who watch to the end, save for later and send our reels to the people they build with.", "platforms": {"instagram": 67000, "facebook": 95000, "youtube": 25000}, "contact": {"name": "Shivam", "email": "collab@kothiclub.example", "whatsapp": "", "instagram": "https://www.instagram.com/", "reply_time": "We reply to every brief within two working days."}, "rates": [{"format": "Dedicated reel", "includes": "A Kothi Club story built around your brand: concept, script, edit and publishing on our page.", "price": 50000}, {"format": "Collab reel", "includes": "Co-published on your profile and ours, so the reel and its numbers count on both.", "price": 60000}, {"format": "Integrated feature", "includes": "Your product placed inside a Kothi Club home story, with a clear spoken or on-screen mention.", "price": 30000}, {"format": "Story, single frame", "includes": "One frame with a link sticker and brand tag, live for 24 hours.", "price": 8000}, {"format": "Story set, three frames", "includes": "A short sequence with a link sticker on the last frame.", "price": 20000}, {"format": "Feed post or carousel", "includes": "A static post or a carousel of up to ten frames.", "price": 25000}, {"format": "Facebook and YouTube", "includes": "Cross-post any reel to our Facebook page and YouTube Shorts.", "price": "Add ₹10,000 each"}, {"format": "Paid usage rights", "includes": "Run our content as ads from your own account for 30 days.", "price": "Add 30%"}], "packages": [{"name": "The Editorial Story", "what": "One storytelling reel", "items": ["One bespoke concept", "Full creative direction", "Edit, motion and pacing", "Publishing and caption", "Performance report"], "price": 50000, "featured": false}, {"name": "The Design Story Series", "what": "Two connected reels", "items": ["Two linked concepts", "One narrative across both", "Supporting stories", "Full direction and edit", "Performance report"], "price": 90000, "featured": true}, {"name": "The Campaign Partnership", "what": "Four reels and stories", "items": ["Campaign planning", "A cohesive brand arc", "Four reels plus stories", "Priority scheduling", "Full reporting"], "price": 170000, "featured": false}], "terms": ["Prices are in Indian rupees and exclude GST.", "50% advance to confirm the slot, 50% before publishing.", "Each format includes one round of changes on the edit.", "Whitelisting, category exclusivity and rush timelines are quoted separately."]}</script>
+<script type="application/json" id="sample-site">{"brand": "Kothi Club", "show_prices": true, "tagline": "Stories of the homes India lives in, told with the care of a design magazine.", "about": "Our audience is homeowners, architects and interior designers who watch to the end, save for later and send our reels to the people they build with.", "platforms": {"instagram": 67000, "facebook": 95000, "youtube": 25000}, "contact": {"email": "kothiclub@gmail.com", "whatsapp": "", "instagram": "https://www.instagram.com/kothiclub/", "reply_time": "We reply to every brief within two working days."}, "rates": [{"format": "Dedicated reel", "includes": "You share a brief or a rough draft of the script. We shape it into a Kothi Club story, edit it and publish it on our page.", "price": 40000}, {"format": "Collab reel", "includes": "Built from your brief or rough script, then co-published on your profile and ours, so the reel and its numbers count on both.", "price": 50000}, {"format": "Integrated feature", "includes": "Your product appears inside one of our regular home stories, with a clear on-screen or spoken mention. The story isn’t about your brand, it features it.", "price": 20000}, {"format": "Story, single frame", "includes": "One frame with a link sticker and brand tag, live for 24 hours.", "price": 3000}, {"format": "Story set, three frames", "includes": "A short sequence with a link sticker on the last frame.", "price": 8000}, {"format": "Feed post or carousel", "includes": "A static post or a carousel of up to ten frames.", "price": 25000}, {"format": "Facebook and YouTube", "includes": "Cross-post any reel to our Facebook page and YouTube Shorts.", "price": "Add ₹10,000 each"}, {"format": "Paid usage rights", "includes": "Run our content as ads from your own account for 30 days.", "price": "Add 30%"}], "packages": [{"name": "The Editorial Story", "what": "One reel and a story set", "items": ["One dedicated reel", "Three-frame story set with link", "Built from your brief or rough script", "Performance report"], "price": 45000, "worth": 48000, "featured": false}, {"name": "The Design Story Series", "what": "Two connected reels", "items": ["Two dedicated reels, one narrative", "Two story sets with links", "Built from your brief or rough script", "Performance report"], "price": 85000, "worth": 96000, "featured": true}, {"name": "The Campaign Partnership", "what": "A month-long campaign", "items": ["Four dedicated reels", "Four story sets with links", "One carousel post", "Campaign planning and priority dates", "Full reporting"], "price": 190000, "worth": 217000, "featured": false}], "terms": ["Prices are in Indian rupees and exclude GST.", "50% advance to confirm the slot, 50% before publishing.", "Each format includes one round of changes on the edit.", "Whitelisting, category exclusivity and rush timelines are quoted separately."]}</script>
 <script>
 (function () {
   "use strict";
+  document.documentElement.classList.add("js");
   const $ = (id) => document.getElementById(id);
   function el(tag, attrs, kids) {
-    const node = document.createElement(tag);
+    const n = document.createElement(tag);
     for (const [k, v] of Object.entries(attrs || {})) {
       if (v == null || v === false) continue;
-      if (k === "class") node.className = v;
-      else if (k === "text") node.textContent = v;
-      else if (k === "style") node.setAttribute("style", v);
-      else node.setAttribute(k, v);
+      if (k === "class") n.className = v;
+      else if (k === "style") n.setAttribute("style", v);
+      else n.setAttribute(k, v);
     }
-    for (const kid of [].concat(kids || [])) {
-      if (kid == null) continue;
-      node.append(kid.nodeType ? kid : document.createTextNode(String(kid)));
+    for (const c of [].concat(kids == null ? [] : kids)) {
+      if (c == null) continue;
+      n.append(c.nodeType ? c : document.createTextNode(String(c)));
     }
-    return node;
+    return n;
   }
   function compact(n) {
     if (n == null || n === "" || isNaN(n)) return "–";
     n = Number(n);
-    const tidy = (x) => String(x >= 100 ? Math.round(x) : Math.round(x * 10) / 10);
+    const t = (x) => String(x >= 100 ? Math.round(x) : Math.round(x * 10) / 10);
     const a = Math.abs(n);
-    if (a >= 999950) return tidy(n / 1e6) + "M";
-    if (a >= 1000) return tidy(n / 1e3) + "K";
+    if (a >= 999950) { const m = n / 1e6; return String(m >= 10 ? Math.round(m * 10) / 10 : Math.round(m * 100) / 100) + "M"; }
+    if (a >= 1000) return t(n / 1e3) + "K";
     return String(Math.round(n));
   }
   const pct = (v) => (v == null || isNaN(v) ? "–" : (Math.round(v * 10) / 10) + "%");
   let showPrices = true;
   const rupees = (p) => (!showPrices ? "On request" : typeof p === "number" ? "₹" + p.toLocaleString("en-IN") : (p || "On request"));
   function ago(iso) {
-    const t = Date.parse(iso);
-    if (isNaN(t)) return "";
+    const t = Date.parse(iso); if (isNaN(t)) return "";
     const m = Math.max(0, Math.round((Date.now() - t) / 60000));
     if (m < 2) return "just now";
     if (m < 60) return m + " minutes ago";
@@ -313,168 +378,174 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 24px;b
     if (h < 48) return h + (h === 1 ? " hour ago" : " hours ago");
     return Math.round(h / 24) + " days ago";
   }
-  const readEmbedded = (id) => { try { return JSON.parse($(id).textContent); } catch (e) { return {}; } };
-  async function load(url, fallbackId) {
-    try {
-      const r = await fetch(url, { cache: "no-store" });
-      if (!r.ok) throw new Error(String(r.status));
-      return { data: await r.json(), sample: false };
-    } catch (e) {
-      return { data: readEmbedded(fallbackId), sample: true };
-    }
+  const embedded = (id) => { try { return JSON.parse($(id).textContent); } catch (e) { return {}; } };
+  async function load(url, fb) {
+    try { const r = await fetch(url, { cache: "no-store" }); if (!r.ok) throw 0; return { data: await r.json(), sample: false }; }
+    catch (e) { return { data: embedded(fb), sample: true }; }
   }
+  const chevron = (dir) => {
+    const s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    s.setAttribute("viewBox", "0 0 16 16"); s.setAttribute("aria-hidden", "true");
+    const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    p.setAttribute("d", dir < 0 ? "M10 3L5 8l5 5" : "M6 3l5 5-5 5");
+    p.setAttribute("fill", "none"); p.setAttribute("stroke", "currentColor"); p.setAttribute("stroke-width", "1.8");
+    p.setAttribute("stroke-linecap", "round"); p.setAttribute("stroke-linejoin", "round");
+    s.append(p); return s;
+  };
+  const views = (c) => (c.views != null ? c.views : c.reach);
 
-  function pane(item, label) {
-    const p = el("div", { class: "pane" });
-    if (item && item.thumb) p.append(el("img", { src: item.thumb, alt: item.caption || label, loading: "lazy" }));
-    else p.append(el("div", { class: "empty", "aria-hidden": "true" }, label));
-    return p;
+  function card(c, kind) {
+    const tag = c.permalink ? "a" : "div";
+    const n = el(tag, { class: "card " + kind, href: c.permalink || null, target: c.permalink ? "_blank" : null, rel: c.permalink ? "noopener" : null });
+    const m = el("div", { class: "media" });
+    if (c.thumb) m.append(el("img", { src: c.thumb, alt: c.caption || "Kothi Club " + kind, loading: "lazy" }));
+    n.append(m);
+    const meta = el("div", { class: "meta" }, [
+      el("p", { class: "views" }, [compact(views(c)) + " ", el("span", {}, "views")]),
+      el("p", { class: "cap" }, c.caption || ""),
+      el("dl", {}, [["Reach", c.reach], ["Likes", c.likes], ["Saves", c.saves], ["Shares", c.shares]]
+        .map(([k, v]) => el("div", {}, [el("dt", {}, k), el("dd", {}, compact(v))])))
+    ]);
+    n.append(meta);
+    return n;
   }
-
-  function tile(item, kind) {
-    const isReel = kind === "reel";
-    const tag = item.permalink ? "a" : "div";
-    const node = el(tag, {
-      class: "tile " + kind,
-      href: item.permalink || null,
-      target: item.permalink ? "_blank" : null,
-      rel: item.permalink ? "noopener" : null
+  function arrows(id) {
+    const box = document.querySelector('.arrows[data-for="' + id + '"]');
+    const track = $(id);
+    [-1, 1].forEach((d) => {
+      const b = el("button", { class: "arrow", type: "button", "aria-label": d < 0 ? "Previous" : "Next" }, chevron(d));
+      b.addEventListener("click", () => track.scrollBy({ left: d * (track.clientWidth * 0.8), behavior: "smooth" }));
+      box.append(b);
     });
-    node.append(pane(item, isReel ? "Reel" : "Post"));
-    node.append(el("p", { class: "big" }, isReel ? compact(item.views) + " views" : compact(item.reach) + " reached"));
-    node.append(el("p", { class: "cap" }, item.caption || ""));
-    const rows = isReel
-      ? [["Reach", item.reach], ["Likes", item.likes], ["Saves", item.saves], ["Shares", item.shares]]
-      : [["Likes", item.likes], ["Comments", item.comments], ["Saves", item.saves], ["Shares", item.shares]];
-    node.append(el("dl", {}, rows.map(([k, v]) => el("div", {}, [el("dt", {}, k), el("dd", {}, compact(v))]))));
-    return node;
   }
-
-  function rows(target, list) {
-    const ul = $(target);
-    const max = Math.max(...list.map((r) => r.share || 0), 1);
-    list.forEach((r) => {
-      ul.append(el("li", {}, [
-        el("span", {}, r.label),
-        el("span", {}, pct(r.share)),
-        el("div", { class: "track", "aria-hidden": "true" }, el("div", { class: "fill", style: "width:" + ((r.share || 0) / max * 100).toFixed(1) + "%" }))
-      ]));
-    });
+  function bars(id, list) {
+    const ul = $(id); const max = Math.max(...list.map((r) => r.share || 0), 1);
+    list.forEach((r) => ul.append(el("li", {}, [
+      el("span", {}, r.label), el("b", {}, pct(r.share)),
+      el("div", { class: "bar", "aria-hidden": "true" }, el("span", { style: "width:" + ((r.share || 0) / max * 100).toFixed(1) + "%" }))
+    ])));
   }
 
   function render(live, site, isSample) {
     const brand = site.brand || "Kothi Club";
     showPrices = site.show_prices !== false;
     document.title = brand + " media kit";
-    $("mark").textContent = brand;
+    $("brand").textContent = brand; $("brand-nav").textContent = brand;
     $("tagline").textContent = site.tagline || "";
     $("about").textContent = site.about || "";
+    const contact = site.contact || {};
+    const igUrl = contact.instagram && contact.instagram.replace(/\/+$/, "") !== "https://www.instagram.com"
+      ? contact.instagram
+      : (live.profile && live.profile.username ? "https://www.instagram.com/" + live.profile.username + "/" : null);
 
-    // platforms
     const lp = live.platforms || {}, sp = site.platforms || {};
-    [["instagram", "Instagram followers"], ["facebook", "Facebook followers"], ["youtube", "YouTube subscribers"]].forEach(([key, label]) => {
-      const n = lp[key] != null ? lp[key] : sp[key];
-      if (n == null) return;
-      $("platforms").append(el("li", {}, [el("span", { class: "n" }, compact(n)), el("span", { class: "l" }, label)]));
+    [["instagram", "Instagram"], ["facebook", "Facebook"], ["youtube", "YouTube"]].forEach(([k, l]) => {
+      const n = lp[k] != null ? lp[k] : sp[k]; if (n == null) return;
+      $("platforms").append(el("li", {}, [el("span", { class: "n" }, compact(n)), el("span", { class: "l" }, l)]));
     });
 
-    // status
-    const status = $("status");
-    if (isSample) {
-      status.textContent = "Sample numbers until Instagram is connected";
-      status.classList.add("sample");
-      $("notice").classList.add("on");
-    } else {
-      status.textContent = "Live from Instagram, updated " + ago(live.generated_at);
-      status.title = new Date(live.generated_at).toLocaleString("en-IN");
-    }
+    const st = $("status");
+    if (isSample) { st.textContent = "Sample numbers until Instagram is connected"; st.classList.add("sample"); $("notice").hidden = false; }
+    else { st.textContent = "Live from Instagram, updated " + ago(live.generated_at); st.title = new Date(live.generated_at).toLocaleString("en-IN"); }
 
-    // hero arch
-    const reels = live.top_reels || [];
-    const top = reels[0];
-    const arch = $("arch");
-    const inner = el(top && top.permalink ? "a" : "div", {
-      class: "frame-wrap",
-      href: top && top.permalink ? top.permalink : null,
-      target: top && top.permalink ? "_blank" : null,
-      rel: top && top.permalink ? "noopener" : null
-    }, [el("div", { class: "frame" }, pane(top, "Your most watched reel appears here")), el("div", { class: "sill" })]);
-    arch.append(inner);
-    if (top) arch.append(el("figcaption", {}, [el("span", {}, "Most watched reel"), el("strong", {}, compact(top.views) + " views")]));
+    // stage
+    const reels = live.top_reels || [], posts = live.top_posts || [];
+    const top = reels.concat(posts).sort((a, b) => (views(b) || 0) - (views(a) || 0))[0];
+    if (top) {
+      if (top.thumb) { $("stage-bg").style.backgroundImage = "url('" + top.thumb + "')"; $("phone").append(el("img", { src: top.thumb, alt: top.caption || "Most viewed" })); }
+      if (top.permalink) $("phone").href = top.permalink; else $("phone").removeAttribute("href");
+      const g = $("glass");
+      g.append(
+        el("p", { class: "k" }, "Most viewed " + (reels.includes(top) ? "reel" : "post")),
+        el("p", { class: "big" }, compact(views(top)) + " views"),
+        el("p", { class: "cap" }, top.caption || ""),
+        el("dl", {}, [["Reach", top.reach], ["Likes", top.likes], ["Saves", top.saves], ["Shares", top.shares]]
+          .map(([k, v]) => el("div", {}, [el("dt", {}, k), el("dd", {}, compact(v))])))
+      );
+      if (top.permalink) g.append(el("a", { class: "textlink", href: top.permalink, target: "_blank", rel: "noopener" }, "Watch on Instagram"));
+    } else $("stage").hidden = true;
 
     // stats
     const d = live.last_30_days || {}, a = live.averages || {};
-    const stats = [
-      [d.views, "Views in the last 30 days"],
-      [d.reach, "Accounts reached in the last 30 days"],
-      [d.accounts_engaged, "Accounts engaged in the last 30 days"],
-      [d.total_interactions, "Interactions in the last 30 days"],
-      [a.reel_views, "Average views per reel"],
-      [a.reel_reach, "Average reach per reel"],
-      [a.engagement_rate, "Engagement rate by reach", true],
-      [a.reel_shares, "Average shares per reel"]
-    ];
-    stats.forEach(([v, label, isPct]) => {
+    [
+      [d.views, "Views in the last 30 days", true], [d.reach, "Accounts reached in the last 30 days", true],
+      [d.accounts_engaged, "Accounts engaged in the last 30 days"], [d.total_interactions, "Interactions in the last 30 days"],
+      [a.reel_views, "Average views per reel"], [a.reel_reach, "Average reach per reel"],
+      [a.engagement_rate, "Engagement rate by reach", false, true], [a.reel_shares, "Average shares per reel"]
+    ].forEach(([v, l, wide, isPct]) => {
       if (v == null) return;
-      $("stats").append(el("div", {}, [el("dt", {}, label), el("dd", {}, isPct ? pct(v) : compact(v))]));
+      $("stats").append(el("div", { class: "tile" }, [el("div", { class: "v" }, isPct ? pct(v) : compact(v)), el("div", { class: "l" }, l)]));
     });
     $("numbers-note").textContent = a.reels_counted
-      ? "Averages cover our last " + a.reels_counted + " reels that are at least three days old, so new uploads don’t pull them down. Engagement counts likes, comments, saves and shares."
+      ? "Averages cover our last " + a.reels_counted + " reels that are at least three days old. Engagement counts likes, comments, saves and shares."
       : "Account-level numbers from Instagram insights.";
 
-    // tiles
-    reels.forEach((r) => $("reels").append(tile(r, "reel")));
-    const posts = live.top_posts || [];
-    if (posts.length) posts.forEach((p) => $("posts").append(tile(p, "post")));
-    else $("posts-block").hidden = true;
+    // carousels
+    reels.forEach((c) => $("reels").append(card(c, "reel")));
+    posts.forEach((c) => $("posts").append(card(c, "post")));
+    if (!reels.length) $("reels-wrap").hidden = true; else arrows("reels");
+    if (!posts.length) $("posts-wrap").hidden = true; else arrows("posts");
 
     // audience
-    const aud = live.audience || {};
-    const g = aud.gender || [];
-    const bar = $("gender-bar");
-    g.forEach((x) => bar.append(el("span", { style: "width:" + (x.share || 0) + "%" })));
-    bar.setAttribute("aria-label", g.map((x) => x.label + " " + pct(x.share)).join(", "));
-    g.forEach((x) => $("gender-legend").append(el("li", {}, [x.label + " ", el("b", {}, pct(x.share))])));
-    rows("age", aud.age || []);
-    rows("cities", aud.cities || []);
-    rows("countries", aud.countries || []);
+    const aud = live.audience || {}, g = aud.gender || [];
+    const colors = ["#1d1d1f", "#86868b", "#d2d2d7"];
+    g.forEach((x) => $("gender-bar").append(el("span", { style: "width:" + (x.share || 0) + "%" })));
+    $("gender-bar").setAttribute("aria-label", g.map((x) => x.label + " " + pct(x.share)).join(", "));
+    g.forEach((x, i) => $("gender-legend").append(el("li", {}, [el("i", { style: "background:" + colors[i % 3] }), x.label + " ", el("b", {}, pct(x.share))])));
+    bars("age", aud.age || []); bars("cities", aud.cities || []); bars("countries", aud.countries || []);
     if (!g.length && !(aud.age || []).length) $("audience").hidden = true;
 
     // rates
-    (site.rates || []).forEach((r) => {
-      $("rate-rows").append(el("tr", {}, [el("td", {}, r.format), el("td", {}, r.includes || ""), el("td", {}, rupees(r.price))]));
+    (site.rates || []).forEach((r) => $("rate-rows").append(el("div", { class: "rate" }, [el("h4", {}, r.format), el("p", {}, r.includes || ""), el("div", { class: "price" }, rupees(r.price))])));
+    (site.packages || []).forEach((p) => {
+      const saving = showPrices && typeof p.worth === "number" && typeof p.price === "number" && p.worth > p.price;
+      $("packs").append(el("div", { class: "pack" + (p.featured ? " feat" : "") }, [
+        el("div", { class: "tag" }, p.featured ? "Most chosen" + (saving ? ", save " + rupees(p.worth - p.price) : "") : (saving ? "Save " + rupees(p.worth - p.price) : "")),
+        el("h4", {}, p.name), el("p", { class: "what" }, p.what || ""),
+        el("ul", {}, (p.items || []).map((i) => el("li", {}, i))),
+        el("div", { class: "price" }, rupees(p.price)),
+        saving ? el("p", { class: "was" }, ["Instead of ", el("s", {}, rupees(p.worth)), " booked separately"]) : null
+      ]));
     });
-    const packs = site.packages || [];
-    if (packs.length) {
-      packs.forEach((p) => {
-        $("packs").append(el("div", { class: "pack" + (p.featured ? " feat" : "") }, [
-          el("div", { class: "tag" }, p.featured ? "Most chosen" : ""),
-          el("h4", {}, p.name),
-          el("p", { class: "what" }, p.what || ""),
-          el("ul", {}, (p.items || []).map((i) => el("li", {}, i))),
-          el("div", { class: "price" }, rupees(p.price))
-        ]));
-      });
-    } else $("packs-block").hidden = true;
     (site.terms || []).forEach((t) => $("terms").append(el("li", {}, t)));
 
     // contact
-    const c = site.contact || {};
-    $("reply").textContent = c.reply_time || "";
-    const actions = $("actions");
-    if (c.email) actions.append(el("a", { class: "btn solid", href: "mailto:" + c.email + "?subject=" + encodeURIComponent("Collaboration with " + brand) }, "Email " + (c.name || "us")));
-    const wa = String(c.whatsapp || "").replace(/\D/g, "");
-    if (wa) actions.append(el("a", { class: "btn", href: "https://wa.me/" + wa, target: "_blank", rel: "noopener" }, "Message on WhatsApp"));
-    if (c.instagram) actions.append(el("a", { class: "btn", href: c.instagram, target: "_blank", rel: "noopener" }, "View Instagram"));
-    const save = el("button", { class: "btn", type: "button" }, "Save as PDF");
-    save.addEventListener("click", () => window.print());
-    actions.append(save);
+    const subject = encodeURIComponent("Collaboration with " + brand);
+    const mail = $("mail");
+    if (contact.email) {
+      mail.href = "mailto:" + contact.email + "?subject=" + subject;
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("viewBox", "0 0 24 24"); svg.setAttribute("aria-hidden", "true");
+      svg.innerHTML = '<rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>';
+      mail.append(svg, contact.email);
+    } else mail.hidden = true;
+    $("reply").textContent = contact.reply_time || "";
+    const minor = $("minor");
+    const wa = String(contact.whatsapp || "").replace(/\D/g, "");
+    if (wa) minor.append(el("a", { href: "https://wa.me/" + wa, target: "_blank", rel: "noopener" }, "WhatsApp"));
+    if (igUrl) minor.append(el("a", { href: igUrl, target: "_blank", rel: "noopener" }, "Instagram"));
+    const save = el("button", { type: "button" }, "Save as PDF");
+    save.addEventListener("click", () => window.print()); minor.append(save);
+    const second = posts[0] && posts[0].thumb ? posts[0].thumb : (top && top.thumb);
+    if (second) $("cta-bg").style.backgroundImage = "url('" + second + "')";
 
+    // reveal on scroll
+    const groups = [["#stats", ".tile"], ["#reels", ".card"], ["#posts", ".card"], [".aud", ".panel"], ["#packs", ".pack"], ["#rate-rows", ".rate"]];
+    groups.forEach(([parent, child]) => document.querySelectorAll(parent + " > " + child).forEach((n, i) => { n.classList.add("reveal"); n.style.setProperty("--i", Math.min(i, 6)); }));
+    document.querySelectorAll(".sec-head, .row-head, .stage, .ratecard").forEach((n) => n.classList.add("reveal"));
+    const io = "IntersectionObserver" in window ? new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        const t = e.target; t.classList.add("in"); io.unobserve(t);
+        setTimeout(() => { t.classList.remove("reveal", "in"); t.style.removeProperty("--i"); }, 1500);
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }) : null;
+    document.querySelectorAll(".reveal").forEach((n) => (io ? io.observe(n) : n.classList.add("in")));
     $("copy").textContent = "© " + new Date().getFullYear() + " " + brand;
   }
 
   Promise.all([load("data/live.json", "sample-live"), load("data/site.json", "sample-site")])
-    .then(([live, site]) => render(live.data, site.data, live.sample));
+    .then(([l, s]) => render(l.data, s.data, l.sample));
 })();
 </script>
 </body>
