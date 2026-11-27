@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-26T01:51:54Z",
+  "generated_at": "2026-11-27T01:53:13Z",
   "profile": {
     "username": "kothiclub",
     "name": "Kothi Club",
-    "followers": 66686,
-    "media_count": 38
+    "followers": 66803,
+    "media_count": 39
   },
   "platforms": {
-    "instagram": 66686,
+    "instagram": 66803,
     "facebook": 94865,
     "youtube": null
   },
   "last_30_days": {
-    "views": 74339,
-    "reach": 49727,
-    "accounts_engaged": 2373,
-    "total_interactions": 3302
+    "views": 133571,
+    "reach": 88074,
+    "accounts_engaged": 3197,
+    "total_interactions": 4377
   },
   "averages": {
-    "reel_views": 170471,
-    "reel_reach": 132739,
+    "reel_views": 170642,
+    "reel_reach": 132781,
     "engagement_rate": 8.69,
-    "reel_shares": 2925,
+    "reel_shares": 2928,
     "reels_counted": 12
   },
   "top_reels": [
@@ -31,13 +31,13 @@
       "type": "VIDEO",
       "posted": "2026-07-23T18:01:08+0000",
       "caption": "Virat Kohli built an 8-acre home with no television. On purpose.",
-      "views": 1563052,
+      "views": 1563671,
       "reach": 1223745,
-      "likes": 79024,
+      "likes": 79030,
       "comments": 250,
-      "saves": 15528,
-      "shares": 33524,
-      "interactions": 129316,
+      "saves": 15533,
+      "shares": 33546,
+      "interactions": 129348,
       "thumb": "media/18157174870471807.jpg"
     },
     {
@@ -46,13 +46,13 @@
       "type": "VIDEO",
       "posted": "2026-07-06T15:06:25+0000",
       "caption": "This is a real middle-class Indian home watch what ₹0 of imagination can do. 🏠",
-      "views": 105452,
-      "reach": 77933,
-      "likes": 572,
+      "views": 105728,
+      "reach": 78067,
+      "likes": 573,
       "comments": 11,
       "saves": 105,
-      "shares": 89,
-      "interactions": 786,
+      "shares": 90,
+      "interactions": 788,
       "thumb": "media/18130315657715673.jpg"
     },
     {
@@ -61,13 +61,13 @@
       "type": "VIDEO",
       "posted": "2026-07-10T17:06:56+0000",
       "caption": "This room transformation ( Visually representing only )",
-      "views": 80195,
-      "reach": 53459,
-      "likes": 444,
+      "views": 80367,
+      "reach": 53519,
+      "likes": 445,
       "comments": 7,
       "saves": 98,
       "shares": 84,
-      "interactions": 635,
+      "interactions": 636,
       "thumb": "media/18014935712712827.jpg"
     },
     {
@@ -76,13 +76,13 @@
       "type": "VIDEO",
       "posted": "2026-06-14T12:10:49+0000",
       "caption": "That’s showing in her living room used to mean your home, had arrived. The Jhula.",
-      "views": 57115,
-      "reach": 45950,
-      "likes": 1170,
+      "views": 57185,
+      "reach": 46000,
+      "likes": 1172,
       "comments": 2,
       "saves": 301,
       "shares": 500,
-      "interactions": 1984,
+      "interactions": 1986,
       "thumb": "media/18068003189394597.jpg"
     },
     {
@@ -91,11 +91,11 @@
       "type": "VIDEO",
       "posted": "2026-07-07T16:32:25+0000",
       "caption": "Which one is your favourite?",
-      "views": 56275,
-      "reach": 46397,
+      "views": 56407,
+      "reach": 46442,
       "likes": 405,
       "comments": 12,
-      "saves": 427,
+      "saves": 428,
       "shares": 336,
       "interactions": 1188,
       "thumb": "media/17884933713435160.jpg"
@@ -106,13 +106,13 @@
       "type": "VIDEO",
       "posted": "2026-06-30T14:06:16+0000",
       "caption": "Why did we stop building homes like this? 🏠",
-      "views": 55220,
+      "views": 55349,
       "reach": 40102,
-      "likes": 1625,
+      "likes": 1627,
       "comments": 17,
-      "saves": 837,
-      "shares": 589,
-      "interactions": 3123,
+      "saves": 839,
+      "shares": 590,
+      "interactions": 3128,
       "thumb": "media/17889257523397202.jpg"
     }
   ],
@@ -123,13 +123,13 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-10-23T16:43:44+0000",
       "caption": "Saif Ali Khan bought back his own home. On purpose.",
-      "views": 911471,
+      "views": 911490,
       "reach": 599372,
       "likes": 10971,
       "comments": 82,
-      "saves": 2681,
+      "saves": 2682,
       "shares": 1975,
-      "interactions": 15800,
+      "interactions": 15801,
       "thumb": "media/18128958244830058.jpg"
     },
     {
@@ -138,13 +138,13 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-10-13T17:00:13+0000",
       "caption": "Jackie Shroff built a forest inside his home. On purpose.",
-      "views": 179287,
+      "views": 179301,
       "reach": 120375,
-      "likes": 2391,
+      "likes": 2392,
       "comments": 49,
       "saves": 381,
       "shares": 562,
-      "interactions": 3426,
+      "interactions": 3427,
       "thumb": "media/18096598103401136.jpg"
     },
     {
@@ -153,7 +153,7 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-07-12T16:32:04+0000",
       "caption": "10 beautiful things from old Indian homes that quietly disappearing.",
-      "views": 25565,
+      "views": 25566,
       "reach": 15334,
       "likes": 442,
       "comments": 16,
@@ -168,8 +168,8 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-10-06T12:53:42+0000",
       "caption": "Old Bombay vs Mumbai today: 6 things our homes quietly lost.",
-      "views": 24750,
-      "reach": 15082,
+      "views": 24759,
+      "reach": 15088,
       "likes": 954,
       "comments": 9,
       "saves": 308,
@@ -183,7 +183,7 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-10-07T13:23:07+0000",
       "caption": "Delhi’s sexiest room was on the roof.",
-      "views": 11633,
+      "views": 11641,
       "reach": 6072,
       "likes": 99,
       "comments": 5,
@@ -198,13 +198,13 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-11-05T16:24:48+0000",
       "caption": "Heard there’s a new electric diya out this Diwali.",
-      "views": 7265,
-      "reach": 3515,
-      "likes": 124,
+      "views": 7287,
+      "reach": 3538,
+      "likes": 125,
       "comments": 21,
       "saves": 8,
       "shares": 17,
-      "interactions": 182,
+      "interactions": 183,
       "thumb": "media/17976810183137540.jpg"
     }
   ],
@@ -212,7 +212,7 @@
     "gender": [
       {
         "label": "Women",
-        "share": 46.1
+        "share": 46.2
       },
       {
         "label": "Men",
@@ -234,15 +234,15 @@
       },
       {
         "label": "25-34",
-        "share": 34.5
+        "share": 34.4
       },
       {
         "label": "35-44",
-        "share": 36.0
+        "share": 36.1
       },
       {
         "label": "45-54",
-        "share": 16.5
+        "share": 16.6
       },
       {
         "label": "55-64",
@@ -264,7 +264,7 @@
       },
       {
         "label": "Delhi",
-        "share": 7.3
+        "share": 7.2
       },
       {
         "label": "Lahore",
