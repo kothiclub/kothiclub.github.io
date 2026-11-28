@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-27T01:53:13Z",
+  "generated_at": "2026-11-28T01:50:18Z",
   "profile": {
     "username": "kothiclub",
     "name": "Kothi Club",
-    "followers": 66803,
+    "followers": 66903,
     "media_count": 39
   },
   "platforms": {
-    "instagram": 66803,
+    "instagram": 66903,
     "facebook": 94865,
     "youtube": null
   },
   "last_30_days": {
-    "views": 133571,
-    "reach": 88074,
-    "accounts_engaged": 3197,
-    "total_interactions": 4377
+    "views": 172009,
+    "reach": 106651,
+    "accounts_engaged": 4046,
+    "total_interactions": 5552
   },
   "averages": {
-    "reel_views": 170642,
-    "reel_reach": 132781,
+    "reel_views": 170786,
+    "reel_reach": 132844,
     "engagement_rate": 8.69,
-    "reel_shares": 2928,
+    "reel_shares": 2929,
     "reels_counted": 12
   },
   "top_reels": [
@@ -31,13 +31,13 @@
       "type": "VIDEO",
       "posted": "2026-07-23T18:01:08+0000",
       "caption": "Virat Kohli built an 8-acre home with no television. On purpose.",
-      "views": 1563671,
+      "views": 1564268,
       "reach": 1223745,
-      "likes": 79030,
+      "likes": 79044,
       "comments": 250,
-      "saves": 15533,
-      "shares": 33546,
-      "interactions": 129348,
+      "saves": 15538,
+      "shares": 33555,
+      "interactions": 129375,
       "thumb": "media/18157174870471807.jpg"
     },
     {
@@ -46,13 +46,13 @@
       "type": "VIDEO",
       "posted": "2026-07-06T15:06:25+0000",
       "caption": "This is a real middle-class Indian home watch what ₹0 of imagination can do. 🏠",
-      "views": 105728,
-      "reach": 78067,
+      "views": 105988,
+      "reach": 78411,
       "likes": 573,
       "comments": 11,
       "saves": 105,
-      "shares": 90,
-      "interactions": 788,
+      "shares": 91,
+      "interactions": 789,
       "thumb": "media/18130315657715673.jpg"
     },
     {
@@ -61,14 +61,29 @@
       "type": "VIDEO",
       "posted": "2026-07-10T17:06:56+0000",
       "caption": "This room transformation ( Visually representing only )",
-      "views": 80367,
+      "views": 80476,
       "reach": 53519,
-      "likes": 445,
+      "likes": 446,
       "comments": 7,
-      "saves": 98,
+      "saves": 99,
       "shares": 84,
-      "interactions": 636,
+      "interactions": 638,
       "thumb": "media/18014935712712827.jpg"
+    },
+    {
+      "id": "18033943196880569",
+      "permalink": "https://www.instagram.com/reel/DgK7Al7TgO1/",
+      "type": "VIDEO",
+      "posted": "2026-11-25T16:11:04+0000",
+      "caption": "Sonam Kapoor put a steel balti inside her home, On purpose.",
+      "views": 58862,
+      "reach": 46550,
+      "likes": 757,
+      "comments": 32,
+      "saves": 247,
+      "shares": 313,
+      "interactions": 1374,
+      "thumb": "media/18033943196880569.jpg"
     },
     {
       "id": "18068003189394597",
@@ -76,13 +91,13 @@
       "type": "VIDEO",
       "posted": "2026-06-14T12:10:49+0000",
       "caption": "That’s showing in her living room used to mean your home, had arrived. The Jhula.",
-      "views": 57185,
-      "reach": 46000,
-      "likes": 1172,
+      "views": 57237,
+      "reach": 46043,
+      "likes": 1174,
       "comments": 2,
       "saves": 301,
       "shares": 500,
-      "interactions": 1986,
+      "interactions": 1988,
       "thumb": "media/18068003189394597.jpg"
     },
     {
@@ -91,29 +106,14 @@
       "type": "VIDEO",
       "posted": "2026-07-07T16:32:25+0000",
       "caption": "Which one is your favourite?",
-      "views": 56407,
+      "views": 56489,
       "reach": 46442,
       "likes": 405,
       "comments": 12,
-      "saves": 428,
-      "shares": 336,
-      "interactions": 1188,
+      "saves": 430,
+      "shares": 337,
+      "interactions": 1191,
       "thumb": "media/17884933713435160.jpg"
-    },
-    {
-      "id": "17889257523397202",
-      "permalink": "https://www.instagram.com/reel/DaNnbE8T7Uh/",
-      "type": "VIDEO",
-      "posted": "2026-06-30T14:06:16+0000",
-      "caption": "Why did we stop building homes like this? 🏠",
-      "views": 55349,
-      "reach": 40102,
-      "likes": 1627,
-      "comments": 17,
-      "saves": 839,
-      "shares": 590,
-      "interactions": 3128,
-      "thumb": "media/17889257523397202.jpg"
     }
   ],
   "top_posts": [
@@ -123,13 +123,13 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-10-23T16:43:44+0000",
       "caption": "Saif Ali Khan bought back his own home. On purpose.",
-      "views": 911490,
+      "views": 911520,
       "reach": 599372,
-      "likes": 10971,
-      "comments": 82,
-      "saves": 2682,
+      "likes": 10972,
+      "comments": 81,
+      "saves": 2684,
       "shares": 1975,
-      "interactions": 15801,
+      "interactions": 15804,
       "thumb": "media/18128958244830058.jpg"
     },
     {
@@ -138,13 +138,13 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-10-13T17:00:13+0000",
       "caption": "Jackie Shroff built a forest inside his home. On purpose.",
-      "views": 179301,
+      "views": 179321,
       "reach": 120375,
       "likes": 2392,
       "comments": 49,
       "saves": 381,
-      "shares": 562,
-      "interactions": 3427,
+      "shares": 563,
+      "interactions": 3428,
       "thumb": "media/18096598103401136.jpg"
     },
     {
@@ -153,13 +153,13 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-07-12T16:32:04+0000",
       "caption": "10 beautiful things from old Indian homes that quietly disappearing.",
-      "views": 25566,
+      "views": 25577,
       "reach": 15334,
-      "likes": 442,
+      "likes": 443,
       "comments": 16,
       "saves": 268,
       "shares": 156,
-      "interactions": 896,
+      "interactions": 897,
       "thumb": "media/18182242108401095.jpg"
     },
     {
@@ -168,7 +168,7 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-10-06T12:53:42+0000",
       "caption": "Old Bombay vs Mumbai today: 6 things our homes quietly lost.",
-      "views": 24759,
+      "views": 24773,
       "reach": 15088,
       "likes": 954,
       "comments": 9,
@@ -183,8 +183,8 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-10-07T13:23:07+0000",
       "caption": "Delhi’s sexiest room was on the roof.",
-      "views": 11641,
-      "reach": 6072,
+      "views": 11653,
+      "reach": 6076,
       "likes": 99,
       "comments": 5,
       "saves": 35,
@@ -198,8 +198,8 @@
       "type": "CAROUSEL_ALBUM",
       "posted": "2026-11-05T16:24:48+0000",
       "caption": "Heard there’s a new electric diya out this Diwali.",
-      "views": 7287,
-      "reach": 3538,
+      "views": 7304,
+      "reach": 3549,
       "likes": 125,
       "comments": 21,
       "saves": 8,
@@ -216,7 +216,7 @@
       },
       {
         "label": "Men",
-        "share": 40.4
+        "share": 40.3
       },
       {
         "label": "Not specified",
@@ -264,7 +264,7 @@
       },
       {
         "label": "Delhi",
-        "share": 7.2
+        "share": 7.3
       },
       {
         "label": "Lahore",
@@ -272,7 +272,7 @@
       },
       {
         "label": "Karachi",
-        "share": 5.5
+        "share": 5.4
       },
       {
         "label": "Dubai",
@@ -282,7 +282,7 @@
     "countries": [
       {
         "label": "India",
-        "share": 54.1
+        "share": 54.2
       },
       {
         "label": "Pakistan",
